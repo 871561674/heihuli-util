@@ -1,5 +1,7 @@
 package com.heihuli.domain;
 
+import com.heihuli.util.HeihuliJacksonUtil;
+
 /**
  * @author heihuli
  */
@@ -29,5 +31,10 @@ public class MapObj {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return HeihuliJacksonUtil.OM.valueToTree(this).toString();
     }
 }
