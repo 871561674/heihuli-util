@@ -58,6 +58,11 @@
             <artifactId>spring-core</artifactId>
             <version>5.2.13.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.33</version>
+        </dependency>
 
     </dependencies>
 
