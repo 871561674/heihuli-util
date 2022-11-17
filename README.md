@@ -10,3 +10,4 @@
 [扁平化map转yaml com/heihuli/util/FlattenedMapToYamlUtil.java](src/main/java/com/heihuli/util/FlattenedMapToYamlUtil.java)<br>
 [获取当前应用自身的Manifest对象 com/heihuli/util/ManifestUtil.java](src/main/java/com/heihuli/util/ManifestUtil.java)<br>
 [通用的for循环并行请求 com/heihuli/util/ParallelUtil.java](src/main/java/com/heihuli/util/ParallelUtil.java)<br>
+[SHA256加密 com/heihuli/util/SHA256Util.java](src/main/java/com/heihuli/util/SHA256Util.java)<br>
