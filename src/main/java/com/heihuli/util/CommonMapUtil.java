@@ -14,7 +14,7 @@ import java.util.Map;
  *
  * Map工具类
  */
-public class HeihuliMapUtil {
+public class CommonMapUtil {
 
     /**
      * 列表转换为以某个字段为key的HashMap，所有异常都会导致当次循环跳过

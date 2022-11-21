@@ -17,7 +17,7 @@ import java.io.OutputStream;
  * @author heihuli
  *
  */
-public class HeihuliJacksonUtil {
+public class CommonJacksonUtil {
 
     /**
      * ObjectMapper<br>
@@ -57,9 +57,9 @@ public class HeihuliJacksonUtil {
      * @throws IOException 解析/生成出现异常时抛出
      */
     public static void convert(byte[] in, OutputStream out, AbstractJsonAdapter adapter) throws IOException {
-        JsonParser p = HeihuliJacksonUtil.JSON_FACTORY.createParser(in);
-        JsonGenerator g = HeihuliJacksonUtil.JSON_FACTORY.createGenerator(out);
-        HeihuliJacksonUtil.convert(p, g, adapter);
+        JsonParser p = CommonJacksonUtil.JSON_FACTORY.createParser(in);
+        JsonGenerator g = CommonJacksonUtil.JSON_FACTORY.createGenerator(out);
+        CommonJacksonUtil.convert(p, g, adapter);
     }
 
     /**
@@ -71,9 +71,9 @@ public class HeihuliJacksonUtil {
      * @throws IOException 解析/生成出现异常时抛出
      */
     public static void convert(InputStream in, OutputStream out, AbstractJsonAdapter adapter) throws IOException {
-        JsonParser p = HeihuliJacksonUtil.JSON_FACTORY.createParser(in);
-        JsonGenerator g = HeihuliJacksonUtil.JSON_FACTORY.createGenerator(out);
-        HeihuliJacksonUtil.convert(p, g, adapter);
+        JsonParser p = CommonJacksonUtil.JSON_FACTORY.createParser(in);
+        JsonGenerator g = CommonJacksonUtil.JSON_FACTORY.createGenerator(out);
+        CommonJacksonUtil.convert(p, g, adapter);
     }
 
     /**

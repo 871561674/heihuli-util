@@ -1,7 +1,7 @@
 package com.heihuli.test;
 
 import com.heihuli.util.ConvertToFlattenedMapUtil;
-import com.heihuli.util.HeihuliJacksonUtil;
+import com.heihuli.util.CommonJacksonUtil;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -25,13 +25,13 @@ public class ConvertToFlattenedMapUtilTest {
         map3.put("subject", list);
         map2.put("study", map3);
         map.put("heihuli", map2);
-        System.out.println(HeihuliJacksonUtil.OM.valueToTree(map).toString());
+        System.out.println(CommonJacksonUtil.OM.valueToTree(map).toString());
         // {"heihuli":{"study":{"subject":[123,true]}}}
 
         Map<String, Object> result = ConvertToFlattenedMapUtil.getFlattenedMap(map);
         System.out.println(result);
         // {heihuli.study.subject[0]=123, heihuli.study.subject[1]=true}
-        System.out.println(HeihuliJacksonUtil.OM.valueToTree(result).toString());
+        System.out.println(CommonJacksonUtil.OM.valueToTree(result).toString());
         // {"heihuli.study.subject[0]":123,"heihuli.study.subject[1]":true}
 
     }

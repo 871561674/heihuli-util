@@ -1,6 +1,6 @@
 package com.heihuli.domain;
 
-import com.heihuli.util.HeihuliJacksonUtil;
+import com.heihuli.util.CommonJacksonUtil;
 
 /**
  * @author heihuli
@@ -35,6 +35,6 @@ public class MapObj {
 
     @Override
     public String toString() {
-        return HeihuliJacksonUtil.OM.valueToTree(this).toString();
+        return CommonJacksonUtil.OM.valueToTree(this).toString();
     }
 }
