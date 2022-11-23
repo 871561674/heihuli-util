@@ -12,3 +12,7 @@
 [通用的for循环并行请求 com/heihuli/util/ParallelUtil.java](src/main/java/com/heihuli/util/ParallelUtil.java)<br>
 [SHA256加密 com/heihuli/util/SHA256Util.java](src/main/java/com/heihuli/util/SHA256Util.java)<br>
 [日期工具类 com/heihuli/util/CommonDateUtil.java](src/main/java/com/heihuli/util/CommonDateUtil.java)<br>
+[检查工具类 com/heihuli/util/CommonCheckUtil.java](src/main/java/com/heihuli/util/CommonCheckUtil.java)<br>
+[List工具类 com/heihuli/util/CommonListUtil.java](src/main/java/com/heihuli/util/CommonListUtil.java)<br>
+[字符串工具类 com/heihuli/util/CommonStringUtil.java](src/main/java/com/heihuli/util/CommonStringUtil.java)<br>
+[Gzip压缩工具类 com/heihuli/util/GzipUtil.java](src/main/java/com/heihuli/util/GzipUtil.java)<br>

@@ -13,13 +13,13 @@ import java.util.concurrent.Executors;
 import java.util.function.Function;
 
 /**
- * @author heihuli
- *
  * 通用的 for 循环并行请求。适用于
  * 1. 每个 for 循环可独立执行，返回 List<R>，然后需要将所有任务的结果汇总返回
  * 2. 因为是并行执行，返回结果元素顺序不定，如果有顺序需求，需要再单独排序
  * 3. 如果一个子任务报错了，只会打印一行错误日志，不影响其他任务的执行
  * 4. 需要等待所有任务都退出后才返回
+ *
+ * @author heihuli
  */
 public class ParallelUtil {
 

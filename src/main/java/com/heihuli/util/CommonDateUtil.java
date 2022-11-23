@@ -1,6 +1,5 @@
 package com.heihuli.util;
 
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +10,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 /**
+ * 日期工具类
+ *
  * @author heihuli
  */
 public class CommonDateUtil {
@@ -52,7 +53,7 @@ public class CommonDateUtil {
                 type = 5;
             }
             SimpleDateFormat df;
-            if (StringUtils.isBlank(format)) {
+            if (CommonStringUtil.isBlank(format)) {
                 df = new SimpleDateFormat(DEFAULT_DATE_FORMAT);
             } else {
                 df = new SimpleDateFormat(format);
@@ -136,7 +137,7 @@ public class CommonDateUtil {
             logger.warn("[CommonDateUtil] diffDateDayStr type is null, return diff-millis");
         }
         try {
-            if (StringUtils.isBlank(format)) {
+            if (CommonStringUtil.isBlank(format)) {
                 format = DEFAULT_DATE_FORMAT;
             }
             Date late = parseDate(lateStr, format);
@@ -196,7 +197,7 @@ public class CommonDateUtil {
      */
     public static String formatDateByFormat(Date date, String format) {
         try {
-            if (StringUtils.isBlank(format)) {
+            if (CommonStringUtil.isBlank(format)) {
                 format = DEFAULT_DATE_FORMAT;
             }
             return new SimpleDateFormat(format).format(date);
@@ -216,7 +217,7 @@ public class CommonDateUtil {
      */
     public static Date parseDate(String dateStr, String format) {
         try {
-            if (StringUtils.isBlank(format)) {
+            if (CommonStringUtil.isBlank(format)) {
                 format = DEFAULT_DATE_FORMAT;
             }
             return new SimpleDateFormat(format).parse(dateStr);
@@ -236,7 +237,7 @@ public class CommonDateUtil {
      * @return
      */
     public static java.sql.Date parseSqlDateStr(String dateStr, String format) {
-        if (StringUtils.isBlank(format)) {
+        if (CommonStringUtil.isBlank(format)) {
             format = DEFAULT_DATE_FORMAT;
         }
         Date date = parseDate(dateStr, format);
@@ -267,7 +268,7 @@ public class CommonDateUtil {
      * @return
      */
     public static Timestamp parseTimestampStr(String dateStr, String format) {
-        if (StringUtils.isBlank(format)) {
+        if (CommonStringUtil.isBlank(format)) {
             format = DEFAULT_DATE_FORMAT;
         }
         Date date = parseDate(dateStr, format);
@@ -306,9 +307,9 @@ public class CommonDateUtil {
      * @return
      */
     public static Long getTimestampFromDateString(String dateStr, String format) {
-        if (StringUtils.isNotBlank(dateStr)) {
+        if (CommonStringUtil.isNotBlank(dateStr)) {
             SimpleDateFormat simpleDateFormat;
-            if (StringUtils.isBlank(format)) {
+            if (CommonStringUtil.isBlank(format)) {
                 simpleDateFormat = new SimpleDateFormat(DEFAULT_DATE_FORMAT);
             } else {
                 simpleDateFormat = new SimpleDateFormat(format);
@@ -342,7 +343,7 @@ public class CommonDateUtil {
         }
         Date date = new Date(timestamp);
         SimpleDateFormat simpleDateFormat;
-        if (StringUtils.isBlank(format)) {
+        if (CommonStringUtil.isBlank(format)) {
             simpleDateFormat = new SimpleDateFormat(DEFAULT_DATE_FORMAT);
         } else {
             simpleDateFormat = new SimpleDateFormat(format);

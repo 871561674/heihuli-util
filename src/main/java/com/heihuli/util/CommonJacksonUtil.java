@@ -14,8 +14,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 /**
- * @author heihuli
+ * jackson工具类
  *
+ * @author heihuli
  */
 public class CommonJacksonUtil {
 

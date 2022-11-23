@@ -22,6 +22,8 @@ public class ConvertToFlattenedMapUtilTest {
         List<Object> list = new ArrayList<>();
         list.add(123);
         list.add(true);
+        list.add(null);
+        list.add("");
         map3.put("subject", list);
         map2.put("study", map3);
         map.put("heihuli", map2);

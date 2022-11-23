@@ -8,9 +8,9 @@ import java.util.jar.JarFile;
 import java.util.jar.Manifest;
 
 /**
- * @author heihuli
- *
  * 获取当前应用自身的Manifest对象
+ *
+ * @author heihuli
  */
 public class ManifestUtil {
     /**

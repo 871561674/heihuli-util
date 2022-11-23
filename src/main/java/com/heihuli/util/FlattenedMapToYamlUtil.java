@@ -8,10 +8,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author heihuliliu
- *
  * 扁平化map转yaml
  * 结合ConvertToFlattenedMapUtil使用
+ *
+ * @author heihuliliu
  */
 public class FlattenedMapToYamlUtil {
 

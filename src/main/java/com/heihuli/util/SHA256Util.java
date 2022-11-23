@@ -13,6 +13,7 @@ import java.security.NoSuchAlgorithmException;
 public class SHA256Util {
 
     /**
+     * String --> byte[]
      * 计算SHA-256摘要
      * 
      * @param content 原文
@@ -27,6 +28,12 @@ public class SHA256Util {
         return hex;
     }
 
+    /**
+     * byte[] --> String
+     *
+     * @param bytes
+     * @return
+     */
     public static String getStr(byte[] bytes) {
         StringBuilder stringBuilder = new StringBuilder();
         String temp;
@@ -42,6 +49,14 @@ public class SHA256Util {
         return stringBuilder.toString();
     }
 
+    /**
+     * String --> String
+     *
+     * @param content
+     * @return
+     * @throws UnsupportedEncodingException
+     * @throws NoSuchAlgorithmException
+     */
     public static String encode(String content) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         byte[] bytes = getByte(content);
         return getStr(bytes);

@@ -1,7 +1,6 @@
 package com.heihuli.util;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -10,14 +9,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author heihuli
- *
  * Map工具类
+ *
+ * @author heihuli
  */
 public class CommonMapUtil {
 
     /**
-     * 列表转换为以某个字段为key的HashMap，所有异常都会导致当次循环跳过
+     * 列表转换为以某个字段为key的HashMap,所有异常都会导致当次循环跳过
      *
      * @param list 列表
      * @param getMethodName 获取字段的方法名
@@ -83,7 +82,7 @@ public class CommonMapUtil {
                                 if (ignoreNullValue && null == value) {
                                     continue;
                                 } else {
-                                    map.put(StringUtils.uncapitalize(m.getName().substring(3)), value);
+                                    map.put(CommonStringUtil.uncapitalize(m.getName().substring(3)), value);
                                 }
                             }
                         } catch (Exception e) {

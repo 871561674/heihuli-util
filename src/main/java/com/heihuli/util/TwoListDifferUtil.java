@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author heihuli
- *
  * 找出两个list中的不同元素
+ *
+ * @author heihuli
  */
 public class TwoListDifferUtil {
 
