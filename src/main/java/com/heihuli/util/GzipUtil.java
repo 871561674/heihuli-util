@@ -1,5 +1,7 @@
 package com.heihuli.util;
 
+import com.heihuli.base.CommonStringUtil;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

@@ -1,6 +1,6 @@
 package com.heihuli.test;
 
-import com.heihuli.util.CommonStringUtil;
+import com.heihuli.base.CommonStringUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -32,6 +32,9 @@ public class CommonStringUtilTest {
         Assert.assertEquals(CommonStringUtil.isNotBlank("\t"), false);
     }
 
+    /**
+     * CommonStringUtil.uncapitalize
+     */
     @Test
     public void test1() {
         System.out.println(CommonStringUtil.uncapitalize("SSAFASFASFddd"));
@@ -42,5 +45,14 @@ public class CommonStringUtilTest {
         // null
         System.out.println(CommonStringUtil.uncapitalize("aSAFAaFASFddd"));
         // aSAFAaFASFddd
+    }
+
+    /**
+     * CommonStringUtil.random
+     */
+    @Test
+    public void test2() {
+        System.out.println(CommonStringUtil.random(10, "abcdefg"));
+        // ecabbabbgd
     }
 }

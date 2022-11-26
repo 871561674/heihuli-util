@@ -1,6 +1,7 @@
 package com.heihuli.util;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.heihuli.base.CommonStringUtil;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

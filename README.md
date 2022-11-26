@@ -14,5 +14,7 @@
 [日期工具类 com/heihuli/util/CommonDateUtil.java](src/main/java/com/heihuli/util/CommonDateUtil.java)<br>
 [检查工具类 com/heihuli/util/CommonCheckUtil.java](src/main/java/com/heihuli/util/CommonCheckUtil.java)<br>
 [List工具类 com/heihuli/util/CommonListUtil.java](src/main/java/com/heihuli/util/CommonListUtil.java)<br>
-[字符串工具类 com/heihuli/util/CommonStringUtil.java](src/main/java/com/heihuli/util/CommonStringUtil.java)<br>
+[字符串工具类 com/heihuli/base/CommonStringUtil.java](src/main/java/com/heihuli/base/CommonStringUtil.java)<br>
 [Gzip压缩工具类 com/heihuli/util/GzipUtil.java](src/main/java/com/heihuli/util/GzipUtil.java)<br>
+[ID生成器 com/heihuli/util/IDGeneratorUtil.java](src/main/java/com/heihuli/util/IDGeneratorUtil.java)<br>
+[JDBC工具类 com/heihuli/util/CommonJdbcUtil.java](src/main/java/com/heihuli/util/CommonJdbcUtil.java)<br>

@@ -7,10 +7,10 @@ import com.fasterxml.jackson.core.JsonToken;
 import java.io.IOException;
 
 /**
- * @author heihuli
- *
  * Json适配器抽象类
  * 直接使用该类Json不会产生任何变动，所以设置为抽象类
+ *
+ * @author heihuli
  */
 public abstract class AbstractJsonAdapter {
 
