@@ -24,3 +24,4 @@
 [Http工具类 com/heihuli/util/HttpClientUtil.java](src/main/java/com/heihuli/util/HttpClientUtil.java)<br>
 [IP获取工具类 com/heihuli/util/IPUtil.java](src/main/java/com/heihuli/util/IPUtil.java)<br>
 [Cron表达式工具类 com/heihuli/util/CronUtil.java](src/main/java/com/heihuli/util/CronUtil.java)<br>
+[Redis工具类 com/heihuli/util/RedisUtil.java](src/main/java/com/heihuli/util/RedisUtil.java)<br>
