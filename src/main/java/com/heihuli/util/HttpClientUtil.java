@@ -31,7 +31,7 @@ import java.util.Map;
 
 /**
  * @author heihuli
- *
+ * <p>
  * http链接工具类
  */
 public class HttpClientUtil {
@@ -80,8 +80,9 @@ public class HttpClientUtil {
             // 执行请求
             response = httpClient.execute(httpGet);
             // 判断返回状态是否为200
-            if (response.getStatusLine().getStatusCode() == 200) {
-                resultString = EntityUtils.toString(response.getEntity(), DEFAULT_ENCODE);
+            resultString = EntityUtils.toString(response.getEntity(), DEFAULT_ENCODE);
+            if (LOG.isDebugEnabled()) {
+                LOG.debug("[HttpClientUtil] doGet response: {}", resultString);
             }
         } catch (Exception e) {
             LOG.error("[HttpClientUtil] doGet request failed, errMsg: {},", e);
@@ -221,7 +222,7 @@ public class HttpClientUtil {
      * @param files
      * @return
      */
-    public static String doPostFile(String uri, String fileKey, File ...files) {
+    public static String doPostFile(String uri, String fileKey, File... files) {
         return doPost(uri, null, null, null, true, null, fileKey, files);
     }
 
@@ -240,14 +241,14 @@ public class HttpClientUtil {
     /**
      * 发送post请求 底层方法
      *
-     * @param uri      uri地址
-     * @param json     请求体
-     * @param param    请求参数
-     * @param header   请求头
-     * @param form     是否表单
-     * @param in       输入流
-     * @param fileKey  文件key 用于服务端接受@RequestParam
-     * @param files    文件数组
+     * @param uri     uri地址
+     * @param json    请求体
+     * @param param   请求参数
+     * @param header  请求头
+     * @param form    是否表单
+     * @param in      输入流
+     * @param fileKey 文件key 用于服务端接受@RequestParam
+     * @param files   文件数组
      * @return
      * @throws Exception
      */
@@ -258,7 +259,7 @@ public class HttpClientUtil {
         CloseableHttpResponse response = null;
         String resultString = "";
         try {
-            if(!uri.toLowerCase().startsWith("http"))
+            if (!uri.toLowerCase().startsWith("http"))
                 uri = "http://" + uri;
             // 创建Http Post请求
             HttpPost httpPost = new HttpPost();
@@ -328,6 +329,9 @@ public class HttpClientUtil {
             // 执行http请求
             response = httpClient.execute(httpPost);
             resultString = EntityUtils.toString(response.getEntity(), DEFAULT_ENCODE);
+            if (LOG.isDebugEnabled()) {
+                LOG.debug("[HttpClientUtil] doPost response: {}", resultString);
+            }
         } catch (Exception e) {
             LOG.error("[HttpClientUtil] doPost request failed, errMsg: {},", e);
         } finally {
