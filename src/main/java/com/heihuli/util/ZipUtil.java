@@ -6,9 +6,9 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 /**
- * @author heihuli
- * <p>
  * zip工具类
+ *
+ * @author heihuli
  */
 public class ZipUtil {
 

@@ -30,9 +30,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author heihuli
- * <p>
  * http链接工具类
+ *
+ * @author heihuli
  */
 public class HttpClientUtil {
 

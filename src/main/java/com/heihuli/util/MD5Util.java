@@ -8,9 +8,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * @author heihuli
- *
  * MD5工具类
+ *
+ * @author heihuli
  */
 public class MD5Util {
 
