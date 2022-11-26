@@ -180,6 +180,15 @@ public class CommonDateUtilTest {
         // 2022-11-22 04:54:58
         System.out.println(CommonDateUtil.getTimestampFromDateString("2022-11-22 04:54:22", ""));
         // 1669064062000
+    }
+
+    @Test
+    public void test7() {
+        System.out.println(CommonDateUtil.isTodayLater(System.currentTimeMillis()));
+        // true
+        System.out.println(CommonDateUtil.isTodayLater(System.currentTimeMillis() - 1000 * 60 * 60 *24));
+        // false
+
 
     }
 }

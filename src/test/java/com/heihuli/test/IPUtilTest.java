@@ -8,6 +8,11 @@ import org.junit.Test;
  */
 public class IPUtilTest {
 
+    /**
+     * IPUtil.getLocalIpv4
+     * IPUtil.getIpv4
+     * IPUtil.getLinuxLocalIpv4()
+     */
     @Test
     public void test() {
         System.out.println(IPUtil.getLocalIpv4());
