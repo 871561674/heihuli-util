@@ -2,6 +2,7 @@ package com.heihuli.util;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.heihuli.base.CommonStringUtil;
+import org.springframework.lang.Nullable;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -150,5 +151,25 @@ public class CommonMapUtil {
      */
     public static Map<String, Object> deepMerge(Map<String, Object> map1, Map<String, Object> map2) {
         return deepMergeAnyKeyType(map1, map2);
+    }
+
+    /**
+     * 判断map是否为空
+     *
+     * @param map
+     * @return
+     */
+    public static boolean isEmpty(@Nullable Map<?, ?> map) {
+        return (map == null || map.isEmpty());
+    }
+
+    /**
+     * 判断map是否不为空
+     *
+     * @param map
+     * @return
+     */
+    public static boolean isNotEmpty(@Nullable Map<?, ?> map) {
+        return !isEmpty(map);
     }
 }

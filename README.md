@@ -18,4 +18,7 @@
 [Gzip压缩工具类 com/heihuli/util/GzipUtil.java](src/main/java/com/heihuli/util/GzipUtil.java)<br>
 [ID生成器 com/heihuli/util/IDGeneratorUtil.java](src/main/java/com/heihuli/util/IDGeneratorUtil.java)<br>
 [JDBC工具类 com/heihuli/util/CommonJdbcUtil.java](src/main/java/com/heihuli/util/CommonJdbcUtil.java)<br>
-[zip工具类 com/heihuli/util/ZipUtil.java](src/main/java/com/heihuli/util/ZipUtil.java)<br>
+[Zip工具类 com/heihuli/util/ZipUtil.java](src/main/java/com/heihuli/util/ZipUtil.java)<br>
+[ThreadFactory工具类 com/heihuli/util/CommonThreadFactoryUtil.java](src/main/java/com/heihuli/util/CommonThreadFactoryUtil.java)<br>
+[MD5工具类 com/heihuli/util/MD5Util.java](src/main/java/com/heihuli/util/MD5Util.java)<br>
+[Http工具类 com/heihuli/util/HttpClientUtil.java](src/main/java/com/heihuli/util/HttpClientUtil.java)<br>
