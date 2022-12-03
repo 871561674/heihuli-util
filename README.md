@@ -27,3 +27,4 @@
 [Redis工具类 com/heihuli/util/RedisUtil.java](src/main/java/com/heihuli/util/RedisUtil.java)<br>
 [Aes加密工具类 com/heihuli/util/AesUtil.java](src/main/java/com/heihuli/util/AesUtil.java)<br>
 [RSA加密工具类 com/heihuli/util/RSAUtil.java](src/main/java/com/heihuli/util/RSAUtil.java)<br>
+[Spring上下文工具类 com/heihuli/util/SpringContextAwareUtil.java](src/main/java/com/heihuli/util/SpringContextAwareUtil.java)<br>
