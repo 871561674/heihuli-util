@@ -19,8 +19,15 @@ public class SshUtilTest {
         System.out.println(b);
         // true
 
-        SshUtil.ExecResult execResult = SshUtil.execCommand("mkdir /heihuli", info);
-        System.out.println(execResult);
+//        SshUtil.ExecResult execResult = SshUtil.execCommand("mkdir /heihuli", info);
+//        System.out.println(execResult);
         // ExecResult{stdout='', stderr='', exitCode=0}
+
+
+        System.out.println(SshUtil.execCommand("ls", info));
+        // ExecResult{stdout='resolv.conf
+        //resolv.conf.bak
+        //test.sh
+        //', stderr='', exitCode=0}
     }
 }

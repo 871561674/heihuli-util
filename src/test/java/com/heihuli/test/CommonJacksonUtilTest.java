@@ -21,8 +21,10 @@ public class CommonJacksonUtilTest {
         o1.setId("1");
         o1.setName("heihuli");
         o1.setDate(new Date());
-        System.out.println(CommonJacksonUtil.OM.valueToTree(o1));
-        // {"id":"1","name":"heihuli","date":"2022-11-05 15:26:24.958+0800"}
+        System.out.println(CommonJacksonUtil.OM.valueToTree(o1).toString());
+        // {"id":"1","name":"heihuli","date":"2022-12-12 19:09:40.049+0800"}
+        System.out.println(CommonJacksonUtil.OM.writeValueAsString(o1));
+        // {"id":"1","name":"heihuli","date":"2022-12-12 19:09:40.049+0800"}
 
         String json = "{\n" +
                 "  \"id\": null,\n" +
@@ -36,6 +38,7 @@ public class CommonJacksonUtilTest {
         byte[] bytes = json.getBytes(StandardCharsets.UTF_8);
         FileOutputStream ot = new FileOutputStream("src/test/java/com/heihuli/file/json.txt");
         CommonJacksonUtil.convert(bytes, ot, new AbstractJsonAdapter() {});
+
 
 //        HeihuliJacksonUtil.OM.writeValue(ot, json);
     }

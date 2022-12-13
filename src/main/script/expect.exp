@@ -1,0 +1,58 @@
+#!/usr/bin/expect  --
+
+#该脚本为模板
+
+#参数1 用户
+set user [ lindex $argv 0 ]
+#参数2 密码
+set password [ lindex $argv 1 ]
+#参数3 端口
+set port [ lindex $argv 2 ]
+#参数4 ip
+set ip [ lindex $argv 3 ]
+#参数5 超时时间，单位秒
+set time_out [ lindex $argv 4 ]
+
+#输出参数
+for { set i 0 } { $i < [ llength $argv ] } { incr i } {
+    puts "参数  [ lindex $argv $i ]"
+}
+
+#设置超时时间，默认-1用不超时
+set timeout -1
+if { "$time_out" != "" } {
+  set timeout $time_out
+}
+#登录
+spawn /usr/bin/ssh -p $port $user@$ip
+#输入密码
+expect {
+        "yes/no*" {send "yes\r"; exp_continue}
+        "password:" {send "$password\r"};
+}
+#dowork
+expect {
+        "*]*" {send "mkdir /heihuli\r"}
+        "#" {send "\r"}
+        ">" {send "\r"}
+        "$*" {send "\r"}
+}
+#dowork
+expect {
+        "*]*" {send "sleep 3\r"}
+        "#" {send "sleep 3\r"}
+        ">" {send "sleep 3\r"}
+        "$*" {send "sleep 3\r"}
+}
+puts "你好"
+#退出
+expect "*]*"; send "exit\r"
+#记录日志
+log_file record.log
+#与用户交互
+#interact
+
+#关闭连接
+expect eof
+
+# 调用案例: expect expect.exp root 123456 22 172.30.0.121 180
