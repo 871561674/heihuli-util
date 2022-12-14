@@ -28,6 +28,8 @@
 [RSA加密工具类](src/main/java/com/heihuli/util/RSAUtil.java)<br>
 [Spring上下文工具类](src/main/java/com/heihuli/util/SpringContextAwareUtil.java)<br>
 [Ssh工具类](src/main/java/com/heihuli/util/SshUtil.java)<br>
+[Shell执行工具类](src/main/java/com/heihuli/util/ShellScriptUtil.java)<br>
+[流处理工具类](src/main/java/com/heihuli/util/StreamUtil.java)<br>
 
 ## 脚本工具
 [expect脚本模板](src/main/script/expect.exp)<br>
