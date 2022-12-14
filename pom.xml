@@ -52,6 +52,11 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.9</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-exec</artifactId>
+            <version>1.3</version>
+        </dependency>
         <!-- spring -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -79,6 +84,16 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.33</version>
         </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.2.11</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.11</version>
+        </dependency>
         <!-- http -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -95,7 +110,7 @@
             <artifactId>httpmime</artifactId>
             <version>4.5.13</version>
         </dependency>
-
+        <!-- ssh -->
         <dependency>
             <groupId>com.jcraft</groupId>
             <artifactId>jsch</artifactId>
